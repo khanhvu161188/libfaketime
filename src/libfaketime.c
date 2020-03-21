@@ -1970,7 +1970,7 @@ int ftime(struct timeb *tb)
   return result; /* will always be 0 (see manpage) */
 }
 
-int gettimeofday(struct timeval *tv, void *tz)
+int gettimeofday_old(struct timeval *tv, void *tz)
 {
   int result;
 
